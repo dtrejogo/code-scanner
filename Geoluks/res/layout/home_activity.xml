@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+	<View 
+        android:id="@+id/divider_map_list"
+        android:layout_below="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/home_map_divider" />
+	
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons"
+        android:layout_below="@+id/divider_map_list" >
+
+        <com.fortysevendeg.swipelistview.SwipeListView
+            android:id="@+id/example_swipe_lv_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="#00000000"
+            swipe:swipeBackView="@+id/back"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeDrawableChecked="@drawable/choice_selected"
+            swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+            swipe:swipeFrontView="@+id/front"
+            swipe:swipeMode="both" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" 
+        android:background="@color/home_button_bar"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1" >
+
+        <ImageButton
+            android:id="@+id/btn_offer"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/selected_button_bar"
+            android:contentDescription="@string/home_contet_offert"
+            android:src="@drawable/background_offer_select"  
+            style="@drawable/margin_button_select"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_compare"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/selected_button_bar"
+            android:contentDescription="@string/home_content_compare"
+            android:src="@drawable/background_compara_select" />
+
+        <ImageButton
+            android:id="@+id/btn_take"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/home_content_take"
+            android:scaleType="center"
+            android:src="@drawable/btnhomecamera" /> 
+        <ImageButton
+            android:id="@+id/btn_list"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/selected_button_bar"
+            android:contentDescription="@string/home_content_list"
+            android:src="@drawable/background_list_select" />
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/selected_button_bar"
+            android:contentDescription="@string/home_content_profile"
+            android:src="@drawable/background_profile_select" />
+
+    </LinearLayout>
+     
+<View 
+        android:id="@+id/divider_ma" 
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/home_button_bar" />
+</RelativeLayout>

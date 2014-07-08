@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp" >
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:tag="back" >
+
+        <RelativeLayout
+            android:id="@+id/btns"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#3b5353"
+            android:orientation="horizontal"  >
+
+            <ImageButton
+                android:id="@+id/btn_editar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:maxHeight="@dimen/abc_action_bar_default_height"
+                android:maxWidth="@dimen/abc_action_bar_default_height"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_editar" />
+
+            <ImageButton
+                android:id="@+id/btn_compartir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_editar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/btn_editar"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:maxHeight="@dimen/abc_action_bar_default_height"
+                android:maxWidth="@dimen/abc_action_bar_default_height"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_share" />
+
+            <ImageButton
+                android:id="@+id/btn_add_lista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_compartir"
+                android:layout_toLeftOf="@+id/btn_compartir"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:maxHeight="@dimen/abc_action_bar_default_height"
+                android:maxWidth="@dimen/abc_action_bar_default_height"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_compartir" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/front"
+        style="@style/MyListFrontContent"
+        android:orientation="horizontal"
+        android:tag="front"
+        android:weightSum="1"
+         >
+
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp" >
+
+            <TextView
+                android:id="@+id/address_places"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="6pt" />
+
+            <TextView
+                android:id="@+id/upload_for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+           
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight="0.1"
+            android:id="@+id/price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:textColor="#8d1600"
+            android:textSize="6.5pt" 
+            android:layout_marginTop="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

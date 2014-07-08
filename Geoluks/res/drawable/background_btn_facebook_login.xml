@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/btnfacebooka" android:state_pressed="true">
+        <shape> 
+            <padding
+                android:left="40dp"  />
+        </shape>
+        
+    </item>
+    <item android:drawable="@drawable/btnfacebooks">
+        <shape> 
+            <padding
+                android:left="40dp"  />
+        </shape>
+    </item>
+</selector>

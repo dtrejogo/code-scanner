@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GeoLuks</string>
+    <string name="geoluks_app_name">GeoLuks</string>
+    <string name="Facebook">face_login</string>
+    <string name="face_app">Facebook</string>
+    <string name="face_app_id">726856907357740</string>
+    <string name="face_app_secret">fc147837a7e88a23ae940eb240495d52</string>
+    <string name="foursquare_app">Forsquare</string>
+    <string name="loading">Loading</string>
+    <string name="en_contruccion">En Contruccion</string>
+    <string name="mostrar">mostrar</string>
+    <string name="editar">Editar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">aceptar</string>
+    <string name="are_here">Estas en:</string>
+    <string name="product_name">Product Name</string>
+    <string name="title_activity_add_offer_image">Agrega la foto de tu oferta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_offer">OFERTAS</string>
+    <string name="select_social_network">Selecciona una de las siguientes redes sociales y disfruta de los mejores precios:</string>
+    <string name="btn_content_login">Boton Login</string>
+    <string name="geoluks_logo_content">Geoluks</string>
+    <string name="term_conditions">Términos y Condiciones</string>
+    <string name="home_activity_title">@string/geoluks_app_name</string>
+    <string name="product_activity_title">PRODUCTO</string>
+    <string name="home_contet_offert">Ofertas</string>
+    <string name="home_content_compare">Compare ofertas</string>
+    <string name="home_content_take">Scanear Producto</string>
+    <string name="home_content_list">Listas de Prodictos</string>
+    <string name="home_content_profile">Mi perfil</string>
+    <string name="home_margin_button_pressed">5dp</string>
+    <string name="home_margin_button_normal">0dp</string>
+    <string name="btn_facebook_login">Iniciar con Facebook</string>
+    <string name="btn_foursquare_login">Iniciar con Foursquare</string>
+    <string name="btn_google_login">Iniciar con Google+</string>
+    <string name="home_offer_loading">Cargando ofertas...</string>
+    <string name="home_offer_no_data">No disponemos de ofertas por aca en este momento.</string>
+    <string name="title_activity_add_list">AddListActivity</string>
+    
+    <string name="list_home_title">Listas</string>
+    <string name="list_added_success">La lista ha sido agregada.</string>
+
+</resources>

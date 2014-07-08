@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="button_normal">#929392</color>
+    <color name="button_pressed">#c0c1c0</color>
+    <color name="dialog_divider">@android:color/black</color>
+ 
+    
+    <!-- Color de barra superior -->
+    <color name="top_compat_bar">#1D3232</color>
+    <!-- barra inferior de home --> 
+    <color name="home_button_bar">#2B8B94</color>
+    <color name="button_selected">#135055</color>
+    <color name="prices">#7D1F1A</color>
+    <color name="offerwall">#E6E6E6</color>
+    
+    <color name="actionbartextcolor">#FFFFFF</color>
+    
+    
+ 
+    <color name="green_actionbar">#1D3238</color>
+    <color name="green_offer_side_button">#135055</color>
+    <color name="green_offer_side_button_pressed">#ff0000</color>
+    <color name="green_offer_side_button_selected">#00ff00</color>
+    <color name="green_common_light">#177683</color>
+    <color name="green_common_dark">#135055</color>
+ 
+
+</resources>

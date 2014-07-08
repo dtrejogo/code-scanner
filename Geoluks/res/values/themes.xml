@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- the theme applied to the application or activity -->
+    <style name="GeoluksActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/GeoluksActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/GeoluksActionBarTitleText</item>
+		<item name="android:homeAsUpIndicator">@drawable/btnback</item> 
+    	<item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="GeoluksActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/top_compat_bar</item>
+    </style>
+    
+    <!-- ActionBar title text -->
+    <style name="GeoluksActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbartextcolor</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:text">se esta aplicando s</item>
+    </style>
+                 
+</resources>

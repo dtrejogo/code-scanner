@@ -1,4 +1,4 @@
 code-scanner
 ============
 
-Code scaner
+Code scanner and geolocalization app

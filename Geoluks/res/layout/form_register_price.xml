@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/cuerpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:shadowColor="@color/result_minor_text"
+                android:text="Registrar Producto"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/btn_change_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerInside"
+                    android:src="@android:drawable/ic_menu_mylocation" />
+
+                <TextView
+                    android:id="@+id/are_here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="@string/are_here" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etBrand"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:hint="Marca de Producto"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp" >
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:hint="Nombre de Producto"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp" >
+
+                
+            </EditText>
+
+            <Spinner
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etPrecio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio"
+                android:inputType="numberDecimal"
+                android:paddingTop="15dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etCodigoBarra"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="Codigo"
+                android:inputType="text"
+                android:paddingTop="15dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Descripcion"
+                android:inputType="textMultiLine"
+                android:paddingTop="15dp" >
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.27"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:weightSum="10" >
+
+                <Button
+                    android:id="@+id/btn_escanear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="5"
+                    android:paddingTop="15dp"
+                    android:text="Cancelar" />
+
+                <Button
+                    android:id="@+id/btn_guardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/btn_escanear"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="5"
+                    android:text="Guardar" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

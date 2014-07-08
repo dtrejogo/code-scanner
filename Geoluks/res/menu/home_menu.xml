@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.fidku.geoluks="http://schemas.android.com/apk/res-auto" >
+
+    
+    <item
+        android:id="@+id/add_offer"
+        android:icon="@drawable/background_offer_wall_select"
+        com.fidku.geoluks:showAsAction="always">
+    </item>
+
+</menu>

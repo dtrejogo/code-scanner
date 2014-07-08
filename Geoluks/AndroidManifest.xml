@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fidku.geoluks"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/geoluks_app_name"
+        android:theme="@style/GeoluksActionBarTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/face_app_id" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA2ldWKmz6989Ue1tPsSUwjCkmzJVwyMmc" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Login activity -->
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/geoluks_app_name" >
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.LoginActivity"
+            android:label="@string/geoluks_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+                <category android:name="android.intent.category.BROWSABLE" >
+                </category>
+            </intent-filter>
+        </activity>
+
+        <!-- End login activity -->
+        <activity
+            android:name="com.fidku.geoluks.MainActivity"
+            android:label="@string/geoluks_app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.HomeLoaderActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.HomeActivity"
+            android:label="@string/geoluks_app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.ScannerActivity"
+            android:label="@string/geoluks_app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.CompareActivity"
+            android:label="@string/geoluks_app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.ListActivity"
+            android:label="@string/geoluks_app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.ProfileActivity"
+            android:label="@string/geoluks_app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.TakeActivity"
+            android:label="@string/geoluks_app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.FormProductActivity"
+            android:label="@string/geoluks_app_name"
+            android:parentActivityName="com.fidku.geoluks.HomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.ProductActivity"
+            android:label="@string/geoluks_app_name"
+            android:parentActivityName="com.fidku.geoluks.HomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.fidku.geoluks.GetNameInBackground$CallbackReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.sample.helloauth.Callback" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.fidku.geoluks.HomeOfferActivity"
+            android:label="@string/title_activity_home_offer"
+            android:parentActivityName="com.fidku.geoluks.HomeActivity" >
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.AddOfferImageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_add_offer_image"
+            android:parentActivityName="com.fidku.geoluks.HomeOfferActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.AddOfferActivity"
+            android:label="@string/title_activity_add_offer"
+            android:parentActivityName="com.fidku.geoluks.AddOfferImageActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity android:name="com.fidku.geoluks.OkActivity" >
+        </activity>
+        <activity
+            android:name="com.fidku.geoluks.AddListActivity"
+            android:label="@string/title_activity_add_list" >
+        </activity>
+    </application>
+
+</manifest>

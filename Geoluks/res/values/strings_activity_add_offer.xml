@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="title_activity_add_offer">Add Offer</string>
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">El campo es requerido</string>
+    
+    <string name="add_offer_title">Descripcion de la oferta</string>
+    <string name="add_offer_description">Descripcion</string>
+    <string name="add_offer_button">Agregar Oferta</string>
+    <string name="add_offer_price">Precio</string>
+    <string name="add_offer_success">La oferta ha sido agregada.</string>
+    <string name="add_offer_processing">Agregando la oferta&#8230;</string>
+    <string name="add_offer_camera_title">Adjuntar Foto Del Producto</string>
+    <string name="edit_offer_button">Aceptar</string>
+    <string name="edit_offer_success">La oferta ha sido actualizada.</string>
+    <string name="offer_list_checked">Nice :)</string>
+    
+    
+</resources>
